@@ -1,11 +1,11 @@
 import axios from 'axios'
 
-const CLIENT_ID = '6wnesVmBJjvQ3b_V_zCj6z3VT5BOKrHYt0QK9_-5ebU'
+const CLIENT_ID = 'eQ84ayYsTHNDfKJ6j-BkaeuCg6IbOXgfqfnkzWiO6yQ'
 
 const axiosInstance = axios.create({
-  baseURL: `https://unsplash.com/photos/random?client_id=${CLIENT_ID}`,
+  baseURL: 'https://api.unsplash.com',
   headers: {
-    'Content-Type': 'application/json',
+    Authorization: `Client-ID ${CLIENT_ID}`,
   },
 })
 
